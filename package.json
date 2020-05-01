@@ -21,7 +21,9 @@
     "daily": "TRENDING_LABEL=trending-daily node .",
     "weekly": "TRENDING_LABEL=trending-weekly node .",
     "precommit": "lint-staged",
-    "prepush": "npm run code"
+    "prepush": "npm run code",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.js": "eslint"
@@ -30,12 +32,14 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "node-fetch": "^2.0.0-alpha.9",
-    "parse-link-header": "^1.0.1"
+    "parse-link-header": "^1.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "^4.10.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "lodash.groupby": "^4.6.0"
-  }
+  },
+  "snyk": true
 }
