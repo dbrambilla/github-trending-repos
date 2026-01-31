@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0",
     "node-fetch": "^2.0.0-alpha.9",
     "parse-link-header": "^1.0.1"
   },
